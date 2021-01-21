@@ -1,4 +1,4 @@
-importScripts("/vue-pwa-qr/precache-manifest.0ed043dedf5d243e57d86e2614b9fe74.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/vue-pwa-qr/precache-manifest.bd21a4385be48cceb319db00fb412adb.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 workbox.setConfig({
   debug: false
