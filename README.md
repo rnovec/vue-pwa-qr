@@ -1,5 +1,7 @@
 # vue-pwa-qr
 
+    $ vue add pwa
+
 ## Project setup
 ```
 npm install
