@@ -88,7 +88,7 @@
 
           <StreamBarcodeReader
             v-if="dialog"
-            @decode="getResult"
+            @decode="onDecode"
             @loaded="onLoaded"
           ></StreamBarcodeReader>
 
@@ -122,13 +122,13 @@ import { StreamBarcodeReader } from 'vue-barcode-reader'
 import VueQrcode from 'vue-qrcode'
 
 export default {
-  data: () => ({ drawer: null, dialog: false, mediaStream: null, result: '' }),
+  data: () => ({ drawer: null, dialog: false, result: '' }),
   components: {
     StreamBarcodeReader,
     VueQrcode
   },
   methods: {
-    getResult (val) {
+    onDecode (val) {
       if (val) {
         this.result = val
         this.dialog = false
@@ -137,11 +137,6 @@ export default {
     onLoaded () {
       console.log('loaded')
     }
-  },
-  mounted () {
-    // navigator.mediaDevices.getUserMedia({ video: true }).then(mediaStream => {
-    //   this.mediaStream = mediaStream
-    // })
   }
 }
 </script>

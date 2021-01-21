@@ -1,4 +1,5 @@
 module.exports = {
+  publicPath: '/vue-pwa-qr/',
   pwa: {
     workboxPluginMode: 'InjectManifest',
     workboxOptions: {
